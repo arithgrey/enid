@@ -1,0 +1,63 @@
+.editar_recurso:hover , .icono_delete_recurso, .icono_delete_perfil , .icono_delete , .editar_perfil , .label{
+
+	cursor: pointer;
+
+}
+.inputdescription , .inputdescriptionperfil{
+  display: none;
+ } 
+.icono_delete , .icono_delete_perfil , .icono_delete_recurso{
+	width: 20%;
+}
+.lb_mnu{
+	font-size: 1.2em;
+	color: #097599;
+}
+.titulo_tb{
+	
+	background: #00B7FF;
+	color: white;
+	
+}
+.newdescriptionicon{
+	width: 80%;
+	cursor: pointer;
+}
+.newdescriptionicon:hover{
+		width: 90%;
+}
+
+.section_description_text_perfil , .section_description_text_recurso{
+	display: none;
+}
+.icono_delete_recurso:hover , .icono_delete_perfil:hover , .icono_delete:hover {
+
+	width: 23%;
+}
+#textareasection{
+	background: none repeat scroll 0% 0% #F6F9FB;
+}
+.danger_icon{
+	width: 7%;
+}
+.editar_recurso:hover  , .editar_perfil:hover{
+	
+	font-size: 1.1em;	
+}
+.iconperfil , .iconrecurso{
+	width: 15%;
+}
+.list_pr {
+	display: none;
+}
+.iconperfil:hover , .iconrecurso:hover{
+	width: 16%;
+}.avanzadoconfigperfilrecurso{
+	width: 25%;
+}
+.avanzadoconfigperfilrecurso:hover{
+	width: 30%;
+}
+.imgavanzador{
+	width: 30%;	
+}
