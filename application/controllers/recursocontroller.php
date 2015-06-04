@@ -26,15 +26,12 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Perfiles';
 				
-				/*
+				
 				$this->load->view('Template/header_template', $data);		
 				$this->load->view('perfiles/principal', $data);			
 				$this->load->view('Template/footer_template', $data);	
-				*/
 				
-				$this->load->view('TemplateFEX/headersesion', $data);		
-				$this->load->view('perfiles/principal', $data);	
-				$this->load->view('TemplateFEX/footersession', $data);	
+				
 				
 
 			}else{
@@ -61,9 +58,9 @@ class Recursocontroller extends CI_Controller {
 
 
 				
-				$this->load->view('TemplateFEX/headersesion', $data);
+				$this->load->view('Template/header_template', $data);
 				$this->load->view(displayviewusuario( $perfil ), $data);	
-				$this->load->view('TemplateFEX/footersession', $data);	
+				$this->load->view('Template/footer_template', $data);
 
 			}else{
 			/*Terminamos la session*/
@@ -118,15 +115,13 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Servicios';
 
-				/*
+				
 				$this->load->view('Template/header_template', $data);						
 				$this->load->view('Template/footer_template', $data);	
-				*/
+				
 
 				
-				$this->load->view('TemplateFEX/headersesion', $data);		
-				$this->load->view('TemplateFEX/footersession', $data);	
-			
+				
 
 
 
@@ -152,13 +147,10 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Tipos servicios';
 				
-				/*	
+			
 				$this->load->view('Template/header_template', $data);						
 				$this->load->view('Template/footer_template', $data);	
-				*/
-				$this->load->view('TemplateFEX/headersesion', $data);		
-					
-				$this->load->view('TemplateFEX/footersession', $data);	
+			
 				
 
 			}else{
@@ -185,13 +177,10 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Eventos';
 				
-				/*	
+				
 				$this->load->view('Template/header_template', $data);						
 				$this->load->view('Template/footer_template', $data);	
-				*/
-				$this->load->view('TemplateFEX/headersesion', $data);		
-					
-				$this->load->view('TemplateFEX/footersession', $data);	
+			
 				
 			}else{
 			/*Terminamos la session*/
@@ -216,13 +205,11 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Mi cuenta';
 				
-				/*	
+					
 				$this->load->view('Template/header_template', $data);						
+				$this->load->view('micuenta/principal' , $data);	
 				$this->load->view('Template/footer_template', $data);	
-				*/
-				$this->load->view('TemplateFEX/headersesion', $data);		
-				$this->load->view('micuenta/principal' , $data);		
-				$this->load->view('TemplateFEX/footersession', $data);	
+				
 				
 			}else{
 			/*Terminamos la session*/
@@ -247,13 +234,11 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Ayuda y primeros pasos';
 				
-				/*
+				
 				$this->load->view('Template/header_template', $data);						
 				$this->load->view('Template/footer_template', $data);	
-				*/
-				$this->load->view('TemplateFEX/headersesion', $data);		
-					
-				$this->load->view('TemplateFEX/footersession', $data);	
+				
+				
 							
 			}else{
 			/*Terminamos la session*/
@@ -266,34 +251,6 @@ class Recursocontroller extends CI_Controller {
 
 
 
-
-
-	/*
-	function organizacion(){
-
-		if ( $this->sessionclass->is_logged_in() == 1) {			
-				$menu = $this->sessionclass->generadinamymenu();			
-				$data["menu"] = $menu; 
-				$data["perfilactual"] =  $this->sessionclass->getnameperfilactual(); 
-				
-				$nombre = $this->sessionclass->getnombre();			
-				$data["nombre"]= $nombre; 				
-
-				$data['titulo']='Organización';
-
-
-				$this->load->view('TemplateFEX/headersesion', $data);		
-					
-				$this->load->view('TemplateFEX/footersession', $data);	
-				
-
-			}else{
-			
-			$this->sessionclass->logout();
-		}
-	
-	}*/
-	
 	/*Inicia función organización*/
 	function organizacion(){
 
@@ -308,9 +265,9 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Organización';
 
-				$this->load->view('TemplateFEX/headersesion', $data);
+				$this->load->view('Template/header_template', $data);
 				$this->load->view('organizacion/principal', $data);
-				$this->load->view('TemplateFEX/footersession', $data);
+				$this->load->view('Template/footer_template', $data);	
 				
 
 			}else{
@@ -340,16 +297,12 @@ class Recursocontroller extends CI_Controller {
 
 				$data['titulo']='Configuración perfiles';
 				$data["modulo"] = $recurso;
-				
-				/*
+			
 				$this->load->view('Template/header_template', $data);		
 				$this->load->view('modulo/moduloconfig.php' , $data);				
 				$this->load->view('Template/footer_template', $data);	
-				*/
+			
 
-				$this->load->view('TemplateFEX/headersesion', $data);		
-				$this->load->view('modulo/moduloconfig.php' , $data);			
-				$this->load->view('TemplateFEX/footersession', $data);	
 				
 
 			}else{

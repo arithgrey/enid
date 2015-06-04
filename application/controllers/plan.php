@@ -12,7 +12,7 @@ class Plan  extends CI_Controller {
 
 
 			$data['titulo']='Planes empresariales';
-			$data['titulo_sistema']='FEX';
+			$data['titulo_sistema']='Enid service';
 			$data['nombreadministrador'] = $this->sessionclass->getnombre();
 			
 
