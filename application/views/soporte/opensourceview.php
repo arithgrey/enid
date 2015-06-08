@@ -108,6 +108,20 @@ body{
 
 </style>	
 
+
+<div class='row'>               
+  <div id="time-line-background" class='container align-center'>    
+    <div class="col-sm-1"></div>    
+            <div class="col-sm-10">    
+              <div id="top_x_div"></div>
+            </div>
+    <div class="col-sm-1"></div>            
+  </div>
+</div>
+
+
+
+
 <div id="principal-img-general" class='container align-center'>
 
 <div class="col-sm-2">
@@ -150,11 +164,10 @@ body{
 
 <div class='row'>		
     
-                
+                      
 
 <div id="time-line-background" class='container align-center'>		
-    <div class="col-sm-12">
-                                        <ul class="revenue-nav">
+                  <ul class="revenue-nav">
                                         <li class="active"><a href="#">#PHP</a></li>                                        
                                         <li class="active"><a href="#">#Python</a></li>                                       
                                         <li class="active"><a href="#">#Java</a></li>
@@ -169,7 +182,8 @@ body{
                                         <li class="active"><a href="#">#SGBD DB2</a></li>
                                         <li class="active"><a href="#">yearly</a></li>
                                     </ul>
-    
+                
+    <div class="col-sm-12">
                         <div class="timeline">
                             <article class="timeline-item alt">
                                 <div class="text-right">
@@ -188,13 +202,54 @@ body{
 
 
 <!--Estadísticas-->
-<div class="row">    
+<script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawStuff);
+ </script>
 
-    <?php print_r($generalstadistics);?>
-                        
-</div>
+<script type="text/javascript">
+    
+    $(document).on("ready", function(){
+
+        listo();
+        
+    });
+    function listo(){
+        estadistics = eval(<?php echo json_encode($generalstadistics);?>);
+            
 
 
+        var data = new google.visualization.arrayToDataTable([
+                      ['', 'Actividad'],            
+                      ["", 0]
+
+        ]);
 
 
-                      
+        for(var x in estadistics){
+
+            nombrerepo = estadistics[x].namerepo;
+            Commits = estadistics[x].Commits;
+
+            data.addRow([nombrerepo , Commits]);
+        }
+
+        var options = {
+          title: '',
+          width: 900,
+          legend: { position: 'none' },
+          chart: { subtitle: 'Proyectos libres' },
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Actividad en Github'} 
+            }
+          },
+          bar: { groupWidth: "100%" }
+        };
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+    
+</script>
+

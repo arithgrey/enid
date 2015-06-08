@@ -23,6 +23,8 @@ class Soportesocialintelligence extends CI_Controller {
 	function opensource(){
 
 		$data['titulo']='Open source';
+		
+		
 		$client = new GitHubClient();		
 		$client->setCredentials( _user , _pass);
 
@@ -40,6 +42,8 @@ class Soportesocialintelligence extends CI_Controller {
 			$data["descriptionpage"] = "Portafolio web @arithgrey";
 			$this->load->view('Template/header_general', $data);
 			$this->load->view('soporte/opensourceview', $data);
+			$this->load->view('new');
+
 			$this->load->view('Template/footer', $data);	
 
 		
@@ -100,7 +104,6 @@ class Soportesocialintelligence extends CI_Controller {
 
 		$data["descriptionpage"] = "descriptionpage";
 		$data["section_mail"]="Visión";
-
 		$this->load->view('Template/header_general', $data);
 		$this->load->view('soporte/visionview', $data);
 		$this->load->view('Template/footer', $data);	

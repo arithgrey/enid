@@ -1,0 +1,3 @@
+function newstadistic(estadistics) {
+
+    }
