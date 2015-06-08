@@ -5,10 +5,7 @@
         $z=0;
             foreach ($repolist as $key => $value) {
                     $reporesume = $repolist[$key];
-
                      
-
-  
     $i++;    
     if (($i % 2) == 0) {
        
