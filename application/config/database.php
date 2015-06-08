@@ -43,7 +43,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'ubcubo.1';
+$db['default']['password'] = '';
 $db['default']['database'] = 'enidserv_eniddbdual';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
