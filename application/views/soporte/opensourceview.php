@@ -102,6 +102,9 @@ body{
 
     background: #FBF9EC;
 }
+.panel:hover{
+    padding: 10px;
+}
 
 </style>	
 
@@ -112,35 +115,61 @@ body{
                 <img id='perfilimg' src="<?=$arithuser->getAvatarUrl()?>">          
             </a>
 </div>            
+
             <div class="col-sm-10">            
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th class='title-table-general'>Compañia</th>
-                            <th class='title-table-general'>Email</th>
-                            <th class='title-table-general'>Repositorios</th>
-                            <th class='title-table-general'>Followers</th>
-                            <th class='title-table-general'>Following</th>
-                            <th class='title-table-general'>Github creado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><?=$arithuser->getCompany()?></td>
-                            <td><?=$arithuser->getEmail()?>   </td>
-                            <td><?=$arithuser->getPublicrepos()?></td>
-                            <td><?=$arithuser->getFollowers()?> </td>
-                            <td><?=$arithuser->getFollowing()?>   </td>
-                            <td><?=$arithuser->getCreatedat()?></td>     
-                        </tr>            
-                    </tbody>
-                </table>               
+                <!--Git table section  -->
+                <div class="row">                    
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class='title-table-general'>Compañia</th>
+                                    <th class='title-table-general'>Email</th>
+                                    <th class='title-table-general'>Repositorios</th>
+                                    <th class='title-table-general'>Followers</th>
+                                    <th class='title-table-general'>Following</th>
+                                    <th class='title-table-general'>Github creado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><?=$arithuser->getCompany()?> en Enid Service </td>
+                                    <td><?=$arithuser->getEmail()?>   </td>
+                                    <td><?=$arithuser->getPublicrepos()?></td>
+                                    <td><?=$arithuser->getFollowers()?> </td>
+                                    <td><?=$arithuser->getFollowing()?>   </td>
+                                    <td><?=$arithuser->getCreatedat()?></td>     
+                                </tr>            
+                            </tbody>
+                        </table>               
+                </div>
+                    <!--Lenguajes section -->
+                
+            
             </div>    
 </div>    
 
 <div class='row'>		
+    
+                
+
 <div id="time-line-background" class='container align-center'>		
     <div class="col-sm-12">
+                                        <ul class="revenue-nav">
+                                        <li class="active"><a href="#">#PHP</a></li>                                        
+                                        <li class="active"><a href="#">#Python</a></li>                                       
+                                        <li class="active"><a href="#">#Java</a></li>
+                                        <li class="active"><a href="#">#JS</a></li>                                                                            
+                                        <li class="active"><a href="#">#HTML5</a></li>   
+                                        <li class="active"><a href="#">#bootstrap</a></li>   
+                                        <li class="active"><a href="#">#Foundation</a></li>   
+                                        <li class="active"><a href="#">#CodeIgniter Web Framework</a></li>                                           
+                                        <li class="active"> <a href="#">#Liferay CMS</a></li>
+                                        <li class="active"><a href="#">#Liferay CMS</a></li>                                     
+                                        <li class="active" ><a href="#">#SGBD MySQL</a></li>
+                                        <li class="active"><a href="#">#SGBD DB2</a></li>
+                                        <li class="active"><a href="#">yearly</a></li>
+                                    </ul>
+    
                         <div class="timeline">
                             <article class="timeline-item alt">
                                 <div class="text-right">
@@ -158,13 +187,10 @@ body{
 </div>
 
 
-
-
-
-
-
+<!--Estadísticas-->
 <div class="row">    
 
+    <?php print_r($generalstadistics);?>
                         
 </div>
 
