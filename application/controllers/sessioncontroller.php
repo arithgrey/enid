@@ -63,20 +63,18 @@ class Sessioncontroller extends CI_Controller {
 
 			if ( $this->sessionclass->is_logged_in() == 1) {			
 
-				$data['titulo']='Bienvenido';
+				$data['titulo']='';
 				$data['nombre']= $this->sessionclass->getnombre();
 				$perfil = $this->sessionclass->getperfiles();
-			
-
 				$menu = $this->sessionclass->generadinamymenu();			
 				$data["menu"] = $menu;
 				$nombre = $this->sessionclass->getnombre();			
-				$data["nombre"]= $nombre;
+				$data["nombre"]= $nombre;				
+				$perfil = $this->sessionclass->getperfiles();			
+				$data['titulo']='';
+				$data["perfilactual"] =  $this->sessionclass->getnameperfilactual(); 
 				
-				$perfil = $this->sessionclass->getperfiles();
 				
-
-				$data['titulo']='Bienvenido a Dawning Dual';
 				$this->load->view('Template/header_template', $data);		
 				$this->load->view(displayviewpresentacion( $perfil ) , $data);
 				$this->load->view('Template/footer_template', $data);	
