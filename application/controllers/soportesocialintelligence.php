@@ -41,9 +41,7 @@ class Soportesocialintelligence extends CI_Controller {
 
 			$data["descriptionpage"] = "Portafolio web @arithgrey";
 			$this->load->view('Template/header_general', $data);
-			$this->load->view('soporte/opensourceview', $data);
-			$this->load->view('new');
-
+			$this->load->view('soporte/opensourceview', $data);			
 			$this->load->view('Template/footer', $data);	
 
 		

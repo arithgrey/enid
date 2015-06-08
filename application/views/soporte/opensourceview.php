@@ -201,6 +201,7 @@ body{
 </div>
 
 
+
 <!--Estadísticas-->
 <script type="text/javascript">
       google.load("visualization", "1.1", {packages:["bar"]});
@@ -221,7 +222,7 @@ body{
 
         var data = new google.visualization.arrayToDataTable([
                       ['', 'Actividad'],            
-                      ["", 0]
+                      [" ", 0]
 
         ]);
 
@@ -252,10 +253,4 @@ body{
     }
     
 </script>
-
-
-
-
-
-
 <!--Termina es script -->
