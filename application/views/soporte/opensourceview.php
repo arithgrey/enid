@@ -17,7 +17,7 @@
                                         $gitelements.="<span class='timeline-icon'></span>";
                                       
                                         $gitelements.="<h1 class='green'><strong>".$reporesume->getName()."</strong></h1>";
-                                        $gitelements.="<p>". substr( $reporesume->getDescription() , 0, 200)    ." <a href='".$reporesume->getHtmlUrl()."'><img class='gitimg'  src='". base_url('application/img/general/social-network44.png'). "'> </a></p>";
+                                        $gitelements.="<p class='article-p'>". substr( $reporesume->getDescription() , 0, 200)    ." <a href='".$reporesume->getHtmlUrl()."'><img class='gitimg'  src='". base_url('application/img/general/social-network44.png'). "'> </a></p>";
                                     $gitelements.="</div>";
                                $gitelements.=" </div>";
                             $gitelements.="</div>";
@@ -36,7 +36,7 @@
                                         $gitelements.="<span class='timeline-icon'></span>";
                                       
                                         $gitelements.="<h1 class='green'><strong>".$reporesume->getName()."</strong></h1>";
-                                        $gitelements.="<p>".  substr( $reporesume->getDescription() , 0, 200)   ." <a href='".$reporesume->getHtmlUrl()."'><img class='gitimg' src='". base_url('application/img/general/social-network44.png'). "'> </a></p>";
+                                        $gitelements.="<p class='article-p' >".  substr( $reporesume->getDescription() , 0, 200)   ." <a href='".$reporesume->getHtmlUrl()."'><img class='gitimg' src='". base_url('application/img/general/social-network44.png'). "'> </a></p>";
                                     $gitelements.="</div>";
                                $gitelements.=" </div>";
                             $gitelements.="</div>";
@@ -68,7 +68,7 @@
 }
 #perfilimg{
     width: 100%; height: 100%;
-    border-radius: 150px; -webkit-border-radius: 150px; -moz-border-radius: 150px;     
+    border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px;     
 }
 
 #perfilimg:hover {
@@ -79,9 +79,9 @@
 
     display: none;
 }
-p{
+.article-p{
+        
     color: black !important;
-    
 }
 #principal-img-general{
     background: #008AFF;

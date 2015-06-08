@@ -23,7 +23,7 @@
   color: #358399;
   font-size: .9em;
 }
-/*Solo para el fex*/
+
 body{
   background: white;
 }
@@ -43,54 +43,26 @@ body{
 .cta-mail{
   display: none;
 }
+#recovery-pw{
+  font-size: 1.2em;
+}
 </style>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-                   
-
-
-
-
-
 <!--**************************************************************************************-->
-
-
-
 <div class='row'>
-
-        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
-            <div class="panel panel-info">
-                       
-
-                    <div style="padding-top:30px" class="panel-body">
-
-      <!--Inicia el formulario -->          
-
-
-
-       
+        <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+                    <div class="panel-body">
+      <!--Inicia el formulario -->                 
                   <form id="in" method="post" action="">
                     <fieldset>                    
                           <legend>
                             <label id="title_sigin_s" class="text-center" >
                               <strong class="">
-                                <center>
-                                  <div class='col-sm-6 col-md-2'></div>
-                                  <div class='col-sm-6 col-md-2'></div>
-                                  <div class='col-sm-6 col-md-2'></div>
-                                         
+                                <center>   
+                                
+                                    Enid Service          
+                                
                                 </center>                       
                               </strong>                  
                             </label>
@@ -123,16 +95,11 @@ body{
                          
                           <div class='row'>
 
-                            <div class='col-sm-6 col-md-2'></div>
-                            <button role="button" id="inbutton" class='btn btn-info col-sm-8 col-md-8'>Empezar ahora</button>
-                            <div class='col-sm-6 col-md-2'></div>
+                            <div class='col-sm-6 col-md-4'></div>
+                            <button role="button" id="inbutton" class='btn btn-info col-sm-4 col-md-4'>Iniciar</button>
+                            <div class='col-sm-6 col-md-4'></div>
                           </div>                        
 
-
-
-
-                          
-                      
                       
                       <label class='' id="reportesession"></label>
                           </fieldset>
@@ -146,7 +113,12 @@ body{
                           <div class='col-sm-6 col-md-2'></div>
 
                            <a data-toggle="modal" class='col-sm-6 col-md-12' href="#myModal">
-                            Recuperar contraseña</a>
+                            <strong>
+                              <span id="recovery-pw">
+                                Recuperar contraseña
+                              </span>
+                            </strong>  
+                          </a>
                            
                       </div>
                     </div>  

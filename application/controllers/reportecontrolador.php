@@ -14,9 +14,9 @@ class Reportecontrolador extends CI_Controller {
     {
         $data['titulo']='Informe de error';
 
-    	$this->load->view('TemplateFEX/header', $data);
+    	$this->load->view('Template/header_general', $data);
         $this->load->view('reporte/reportes');
-        $this->load->view('TemplateFEX/footer', $data);
+        $this->load->view('Template/footer', $data);
     	
     }
 
@@ -33,9 +33,13 @@ class Reportecontrolador extends CI_Controller {
                 $data["perfilactual"] =  $this->sessionclass->getnameperfilactual(); 
                 $data['titulo']='Mejora continua';
                 
-                $this->load->view('TemplateFEX/headersesion', $data);
+                $data["descriptionpage"] = "descriptionpage";
+        
+                $data["section_mail"]="Testimonios";
+                $this->load->view('Template/header_general', $data);
+
                 $this->load->view('reporte/listarReportes/listado');
-                $this->load->view('TemplateFEX/footer', $data);
+                $this->load->view('Template/footer', $data);
 
 
             }else{
@@ -51,9 +55,9 @@ class Reportecontrolador extends CI_Controller {
 
         $data["reportesystema"] = $this->pdf->getReportes();
 
-        $this->load->view('TemplateFEX/header', $data);
+        $this->load->view('Template/header_general', $data);
         $this->load->view('reporte/exportaPDF/documento');
-        $this->load->view('TemplateFEX/footer', $data);
+        $this->load->view('Template/footer', $data);
     }
 
 

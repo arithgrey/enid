@@ -111,7 +111,7 @@
             <h4 class="modal-title" id="myModalLabel">Version del Producto</h4>
             </div>
             <div class="modal-body">
-                <h3>FEX version 1.2</h3>
+                <h3>Enid Service version 1.2</h3>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>

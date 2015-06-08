@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Experiencia  extends CI_Controller {
+class Appsocial extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
@@ -7,33 +7,21 @@ class Experiencia  extends CI_Controller {
 	}
 	
 
-	function index(){
+	function principal(){
 		if ( $this->sessionclass->is_logged_in() == 1) {			
 
 
-			$data['titulo']='Casos de éxito';
+			echo "string";
 			
-			
-			$this->load->view('Template/header_general', $data);			
-			$this->load->view("experiencia/principal" , $data);
-			$this->load->view('Template/footer', $data);	
-				
-
-
-
-
-
     	}else{
-			/*Terminamos la session*/
+
 			$this->sessionclass->logout();
 		}			
-
-
 
 	}/*Termina la función*/
 
 
 
+
 		
 }/*Termina el controlador */
- 

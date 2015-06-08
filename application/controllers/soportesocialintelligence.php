@@ -16,6 +16,7 @@ class Soportesocialintelligence extends CI_Controller {
 		$data["descriptionpage"] = "descriptionpage";
 		$this->load->view('Template/header_general', $data);
 
+		$data["section_mail"]="arithgrey";
 		$this->load->view('soporte/documentacionview', $data);
 		$this->load->view('Template/footer', $data);
 		
@@ -35,10 +36,6 @@ class Soportesocialintelligence extends CI_Controller {
 		$data["commits"] = $client->repos->commits;
 		
 		
-
-		
-		
-
 			$data["descriptionpage"] = "Portafolio web @arithgrey";
 			$this->load->view('Template/header_general', $data);
 			$this->load->view('soporte/opensourceview', $data);			
@@ -77,7 +74,6 @@ class Soportesocialintelligence extends CI_Controller {
 		$data["descriptionpage"] = "descriptionpage";
 		$this->load->view('Template/header_general', $data);
 		$data["section_mail"]="services";
-
 
 		$this->load->view('soporte/serviciosview', $data);
 		$this->load->view('Template/footer', $data);

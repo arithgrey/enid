@@ -38,7 +38,7 @@
 | the active record class
 */
 
-/*
+
 
 $active_group = 'default';
 $active_record = TRUE;
@@ -58,8 +58,9 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
-*/
 
+
+/*
 
 $active_group = 'default';
 $active_record = TRUE;
@@ -79,7 +80,7 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
-
+*/
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

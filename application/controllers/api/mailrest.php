@@ -106,7 +106,7 @@ public function setmailgmailnewinvitaticon_post(){
 		Para iniciar sessión al sistema dirigete a: ". base_url('index.php/sessioncontroller/iniciosessionuser')."
 		";
 
-		$subject ='Invitación a formar parte del sistema FEX';
+		$subject ='Invitación a formar parte del sistema Enid Service';
 					 $clientresponse = $this->sendMailGmailnuevainvitacioncuenta( trim($mailnewcontact) ,$contraseñaaleatoria, $mensaje, $subject);
 
 				}else{
@@ -176,7 +176,7 @@ function sendMailGmail_get()
 		 
 		$this->email->from('jmedrano@ubcubo.com');
 		$this->email->to("arithgrey@gmail.com");
-		$this->email->subject('Invitación a formar parte del sistema FEX');
+		$this->email->subject('Invitación a formar parte del sistema Enid Service');
 		$this->email->message('<h2>by desde el rest @arithgrey</h2>');
 		$this->email->send();
 		//con esto podemos ver el resultado

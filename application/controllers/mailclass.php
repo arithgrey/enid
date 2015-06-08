@@ -34,7 +34,7 @@ public function sendMailGmail()
 	 
 	$this->email->from('arithgrey@gmail.com');
 	$this->email->to("arithgrey@gmail.com");
-	$this->email->subject('Invitación a formar parte del sistema FEX');
+	$this->email->subject('Invitación a formar parte del sistema Enid Service');
 	$this->email->message('<h2>Inv</h2>');
 	$this->email->send();
 	//con esto podemos ver el resultado
