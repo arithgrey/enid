@@ -84,7 +84,7 @@
     color: black !important;
 }
 #principal-img-general{
-    background: #008AFF;
+    background: #303E4A none repeat scroll 0% 0%;
     padding: 5px;
 }
 .title-table-general{
@@ -93,34 +93,29 @@
 }
 td{
     color: white !important;    
+    font-size: 1.3em;
 }
 
 #time-line-background{
-    background: none repeat scroll 0% 0% #16292F;
+    //background: none repeat scroll 0% 0% #16292F;
 }
 body{
 
     background: #FBF9EC;
+    
 }
 .panel:hover{
     padding: 10px;
 }
 
+
 </style>	
 
 
-<div class='row'>               
-  <div id="time-line-background" class='container align-center'>    
-    <div class="col-sm-1"></div>    
-            <div class="col-sm-10">    
-              <div id="top_x_div"></div>
-            </div>
-    <div class="col-sm-1"></div>            
-  </div>
-</div>
 
 
 
+<br>
 
 <div id="principal-img-general" class='container align-center'>
 
@@ -167,6 +162,7 @@ body{
                       
 
 <div id="time-line-background" class='container align-center'>		
+                  <!--
                   <ul class="revenue-nav">
                                         <li class="active"><a href="#">#PHP</a></li>                                        
                                         <li class="active"><a href="#">#Python</a></li>                                       
@@ -182,7 +178,7 @@ body{
                                         <li class="active"><a href="#">#SGBD DB2</a></li>
                                         <li class="active"><a href="#">yearly</a></li>
                                     </ul>
-                
+                -->
     <div class="col-sm-12">
                         <div class="timeline">
                             <article class="timeline-item alt">
@@ -199,6 +195,46 @@ body{
     </div>
 </div>
 </div>
+
+
+
+<div class='row'>               
+  <div id="time-line-background" class='container align-center'>    
+    <div class="col-sm-1"></div>    
+            <div class="col-sm-10">    
+              <div id="top_x_div"></div>
+            </div>
+    <div class="col-sm-1"></div>            
+  </div>
+
+
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+
+        <form id="form-comentario">
+            <div class="form-group">
+              <h1>Déjame tus datos y yo me pondré en contacto contigo.</h1>
+              <textarea  name='comentario' class="form-control" rows="5"></textarea>
+            </div>
+
+        </form>
+        <button id="btn-env-comentario" class="btn btn-primary">Enviar</button>
+        
+            <div class="row">
+            <div id="cliente-response"></div>
+            </div>
+
+
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
 
 
 

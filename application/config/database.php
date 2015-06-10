@@ -45,7 +45,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'puntoExeJar';
+$db['default']['password'] = 'ubcubo.1';
 $db['default']['database'] = 'enidserv_eniddbdual';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
@@ -81,6 +81,5 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 */
-
 /* End of file database.php */
 /* Location: ./application/config/database.php */
