@@ -22,14 +22,13 @@ function setComent(){
 
 		
 		llenaelementoHTML("#cliente-response" , "Gracias comentario recibido.!");
-
+		$("#comentario").val("");
 	}).fail(function(){
 		/*Error*/
 		llenaelementoHTML("#cliente-response" , genericresponse[0]);
 
 
 	});
-
-
+	
 	return false;
 }

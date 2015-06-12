@@ -1,45 +1,13 @@
 
-<div class='col-xs-12 col-sm-1'></div><!--Margen a la izquierda-->                  
-</div>
-
-
-
-		
-
-        </div>
-
-<div class="cta-mail">
-    <div class="container text-center">
-        <h3 id='titlesubscripcion'><strong> Quieres estar al día de las nuevas experiencias &amp; casos de éxito </strong></h3>
-        <h4 class='leyendaletters'>Suscríbase a nuestra lista de correo para recibir la actualización de los nuevos casos de éxito
-          registrados </h4>
-        
-        
-        <div id="mc_embed_signup">
-            <form role="form" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
-                <div class="input-group input-group-lg">
-                    <input name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="arithgrey@gmail.com" type="email">
-                    <span class="input-group-btn">
-                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
-                    </span>
-                </div>
-                <div id="mce-responses">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-            </form>
-        </div>
-        <!-- End MailChimp Signup Form -->
+        </div>        
+        <!--body wrapper end-->
     </div>
-</div>
-<br>
+    <!-- main content end-->
 
+</section>
+    <!--footer section start-->
 
-
-
-
-<!--Termina new letter-->
-
+<div class="row">
   <footer class='col-xs-12 col-sm-12'>    
     <strong><p id="title_main" >Soporte Social Intelligence</p></strong>
       <div class="col-xs-12 col-sm-1" >
@@ -127,32 +95,9 @@
          </div>       
       <input type="hidden" name="now" class="now" value="<?=base_url();?>">
   </footer>
+</div>  
+    <!--footer section end-->
+
 
 </body>
-</html> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>

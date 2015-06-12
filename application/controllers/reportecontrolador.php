@@ -36,10 +36,10 @@ class Reportecontrolador extends CI_Controller {
                 $data["descriptionpage"] = "descriptionpage";
         
                 $data["section_mail"]="Testimonios";
-                $this->load->view('Template/header_general', $data);
+                $this->load->view('Template/header_template', $data);
 
                 $this->load->view('reporte/listarReportes/listado');
-                $this->load->view('Template/footer', $data);
+                $this->load->view('Template/footer_template', $data);
 
 
             }else{

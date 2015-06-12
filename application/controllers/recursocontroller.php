@@ -41,6 +41,51 @@ class Recursocontroller extends CI_Controller {
 		
 	}	
 
+
+
+
+
+
+
+
+	function test(){
+
+		if ( $this->sessionclass->is_logged_in() == 1) {		
+				/*Load data*/				
+				$menu = $this->sessionclass->generadinamymenu();			
+				$data["perfilactual"] =  $this->sessionclass->getnameperfilactual(); 
+				
+				$data["menu"] = $menu;					
+				$nombre = $this->sessionclass->getnombre();			
+				$data["nombre"]= $nombre;
+				$perfil = $this->sessionclass->getperfiles();
+
+				$data['titulo']='Usuarios';
+
+				
+				$this->load->view('Template/header_test', $data);
+				
+				
+
+			}else{
+			/*Terminamos la session*/
+			$this->sessionclass->logout();
+		}		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	function usuarios(){
 
 		if ( $this->sessionclass->is_logged_in() == 1) {		
@@ -65,10 +110,7 @@ class Recursocontroller extends CI_Controller {
 			}else{
 			/*Terminamos la session*/
 			$this->sessionclass->logout();
-		}
-
-		
-		
+		}		
 	}
 
 	function tiposeventos(){

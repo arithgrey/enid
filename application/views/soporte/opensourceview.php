@@ -220,7 +220,7 @@ body{
         <form id="form-comentario">
             <div class="form-group">
               <h1>Déjame tus datos y yo me pondré en contacto contigo.</h1>
-              <textarea  name='comentario' class="form-control" rows="5"></textarea>
+              <textarea  id="comentario" name='comentario' class="form-control" rows="5"></textarea>
             </div>
 
         </form>
