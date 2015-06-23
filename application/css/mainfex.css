@@ -1,0 +1,141 @@
+.icono_delete{
+	
+	width: 25%;
+}
+
+#enid_title{
+	color: white;
+}
+
+header{	
+	margin: 0 auto;	
+	
+}
+
+#icono_twitter , #icono_fb, #icono_tel {
+	width: 70px;
+	border-radius: 5px;
+}
+
+#sliderOutput3{
+	background: rgb(226, 41, 41);
+	color: white;
+	padding: 10px;
+
+}
+
+#title_p{
+	font-size: 1.6em;
+	color: white;
+}
+p{
+	color: rgba(172, 182, 183, 1);
+}
+#title_main{
+	font-size: 2em;
+	color: white;
+}
+#seguirleyendo{
+	color: white;
+}
+#titulo_pag{
+	color: white;
+	font-size: 1.2em;
+
+}#menu_all{
+	background: none repeat scroll 0% 0% rgba(161, 205, 211, 1);
+
+}
+#intw_p{
+	
+	font-size: 1.2em;
+}#title_page{
+
+	
+	font-size: 1.2em;
+
+}#main_title_page{
+	
+	color: rgba(26, 110, 149, 1);
+}#img_home{
+	width: 4%;
+}
+.img_icon{
+	width: 13%;
+	background: #0AD0FF;
+	padding: 5px;
+	border-radius: 100%;
+
+
+}
+.header_title_section{
+ 	background: none repeat scroll 0% 0% #0AD0FF; 	 	
+	padding: 10px;
+
+}
+.textdecorationanone{
+	color: white;
+
+}.text_menu{
+	font-size: 1em;
+	color: #949FA2;
+}
+
+.li_defaul{
+
+	background: none repeat scroll 0% 0% #4ACACB;
+	box-shadow: 0px 5px 0px #42B5B6;
+}
+.titulo_tb{
+	
+	background: #00B7FF;
+	color: white;
+	
+}
+.moresize{
+	font-size: 1.2em;
+}
+.subpagetitle{
+	font-size: .9em;
+}
+.silver{
+	color: #B9BCC3;
+}
+.align-center {
+    text-align: center;
+}
+
+.btn-lg {
+    padding: 16px 26px !important;
+}
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33333;
+    border-radius: 6px;
+}
+
+
+.btn-primary {
+
+    border-color: #F1F5F9;
+    background: none repeat scroll 0% 0% #3695AA;
+}
+
+.leyendaletters{
+  color: #ADB0B1;
+}
+
+.transparentcuadro{
+  
+  height: 61px;
+  line-height: 61px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  font-size: 1.2em;
+}
+
+a{
+	text-decoration: none;
+}

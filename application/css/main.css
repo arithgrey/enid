@@ -1,0 +1,27 @@
+/*Footer*/
+
+footer{
+	//background: none repeat scroll 0% 0% #0E8F8F;
+	background: none repeat scroll 0% 0% #052D2D;
+}
+
+a, .tag_a{	
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+#title-footer{
+
+	color: white;
+	font-size: 1.5em;
+}
+
+.progress , .progress-xs{
+    display: none;
+}
+#mce-success-response, #mce-error-response{
+    font-size: 1.4em;
+}
+.text-white, .title_white{
+	color: white;
+}
