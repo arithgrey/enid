@@ -62,7 +62,6 @@
     <!-- Color Switcher End -->
   </body>
 
-<!-- Mirrored from htmlcoder.me/preview/the_project/v.1.0/template/index-portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jun 2015 15:28:43 GMT -->
 </html>
 
 

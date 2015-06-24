@@ -68,21 +68,34 @@
                             </a>
 
 
-                            <ul class="dropdown-menu">
-                              <li ><a href="index.html">Home Default</a></li>
-                              <li ><a href="index-corporate-1.html">Corporate 1</a></li>
-                              <li ><a href="index-corporate-2.html">Corporate 2</a></li>
-                              <li ><a href="index-corporate-3.html">Corporate 3</a></li>
-                              <li ><a href="index-shop.html">Commerce 1</a></li>
-                              <li ><a href="index-shop-2.html">Commerce 2</a></li>
-                              <li class="active"><a href="index-portfolio.html">Portfolio/Agency</a></li>
-                              <li ><a href="index-medical.html">Medical</a></li>
-                              <li ><a href="index-restaurant.html">Restaurant</a></li>
-                              <li ><a href="index-wedding.html">Wedding</a></li>
-                              <li ><a href="index-landing.html">Landing Page</a></li>
-                              <li ><a href="page-coming-soon.html">Coming Soon</a></li>
-                              <li ><a href="index-one-page.html">One Page Version</a></li>
+                                <ul class="dropdown-menu">
+                              
+                                <a href="<?=base_url('index.php/sessioncontroller/iniciosessionuser')?>">
+                                  <li ><i class="fa fa-sign-in"></i>
+                                  Iniciar sessión</a></li>
+                              <li >
+                                <a href="<?=base_url('index.php/soportesocialintelligence/nosotros')?>">
+                                  <i class="fa fa-users"></i>
+                                  Nosotros
+                                </a>
+                            </li>
+                              <li >
+                                <a href="<?=base_url('index.php/soportesocialintelligence/testimonios/servicios')?>">
+                                  <i class="fa fa-area-chart"></i>
+                                    Casos de éxito
+                                </a>
+                              </li>
+                              <li >
+
+                                <a href="<?=base_url('index.php/soportesocialintelligence/servicios')?>">
+                                  <i class="fa fa-credit-card"></i>
+
+                                  Servicios</a>
+                              </li>
+                              
                             </ul>
+
+
                           </li>
                         </ul>
                       </div>

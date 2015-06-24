@@ -14,7 +14,7 @@ class Soportesocialintelligence extends CI_Controller {
 
 		$data['titulo']='Documentación';
 		$data["descriptionpage"] = "descriptionpage";
-		$this->load->view('Template/header_general', $data);
+		$this->load->view('Template/header_white', $data);
 
 		$data["section_mail"]="arithgrey";
 		$this->load->view('soporte/documentacionview', $data);
@@ -37,7 +37,7 @@ class Soportesocialintelligence extends CI_Controller {
 		
 		
 			$data["descriptionpage"] = "Portafolio web @arithgrey";
-			$this->load->view('Template/header_template_nosession', $data);
+			$this->load->view('Template/header_white', $data);
 			$this->load->view('soporte/opensourceview', $data);			
 			$this->load->view('Template/footer_tema_nosession', $data);	
 
@@ -45,13 +45,14 @@ class Soportesocialintelligence extends CI_Controller {
 			
 	}
 
+
 	function testimonios(){
 
 		$data['titulo']='Testimonios';
 		$data["descriptionpage"] = "descriptionpage";
 		
 		$data["section_mail"]="Testimonios";
-		$this->load->view('Template/header_general', $data);
+		$this->load->view('Template/header_white', $data);
 		$this->load->view('soporte/testimoniosview', $data);
 		$this->load->view('Template/footer', $data);
 			
@@ -60,7 +61,7 @@ class Soportesocialintelligence extends CI_Controller {
 
 		$data['titulo']='Nosotros';
 		$data["descriptionpage"] = "descriptionpage";
-		$this->load->view('Template/header_general', $data);
+		$this->load->view('Template/header_white', $data);
 		$data["section_mail"]="nosotros";
 
 		$this->load->view('soporte/abouthview', $data);
@@ -72,7 +73,7 @@ class Soportesocialintelligence extends CI_Controller {
 
 		$data['titulo']='Servicios';
 		$data["descriptionpage"] = "descriptionpage";
-		$this->load->view('Template/header_general', $data);
+		$this->load->view('Template/header_white', $data);
 		$data["section_mail"]="services";
 
 		$this->load->view('soporte/serviciosview', $data);
@@ -87,7 +88,7 @@ class Soportesocialintelligence extends CI_Controller {
 		$data["descriptionpage"] = "descriptionpage";
 		$data["section_mail"]="misión";
 
-		$this->load->view('Template/header_general', $data);
+		$this->load->view('Template/header_white', $data);
 		$this->load->view('soporte/misionview', $data);
 		$this->load->view('Template/footer', $data);
 
@@ -98,7 +99,7 @@ class Soportesocialintelligence extends CI_Controller {
 
 		$data["descriptionpage"] = "descriptionpage";
 		$data["section_mail"]="Visión";
-		$this->load->view('Template/header_general', $data);
+		$this->load->view('Template/header_white', $data);
 		$this->load->view('soporte/visionview', $data);
 		$this->load->view('Template/footer', $data);	
 	}

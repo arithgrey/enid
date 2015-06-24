@@ -60,9 +60,6 @@
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <!-- main-menu -->
-
-
-                        <!--
                         <ul class="nav navbar-nav ">
                           <li class="dropdown active">
 
@@ -98,7 +95,7 @@
                               
                             </ul>
                           </li>
-                        </ul>-->
+                        </ul>
                       </div>
 
                     </div>
