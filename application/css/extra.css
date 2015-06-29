@@ -1,0 +1,21 @@
+/*Boton blanco transparente*/
+.btn-line {
+    font-weight: 400;
+    padding: 12px 18px;
+    font-size: 18px;
+    background: none repeat scroll 0% 0% #FFF;
+    color: #050008;
+    border-radius: 3px;
+    border: 1px solid #0D5499;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.1s ease 0s;
+}
+
+/**/
+
+#titlesubscripcion{
+
+   color : #00C0FF;
+}
+
